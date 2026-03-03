@@ -26,12 +26,10 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
 
 <h2>Program walk-through:</h2>
 
-<img src="https://i.imgur.com/rGVFHbY.png" height="80%" width="80%" />
-  <h1> Gitlab</h1>
-<img src="https://i.imgur.com/tvllt7m.png" height="80%" width="80%" />
-  <h1>SonarQube</h1>
+<img src="https://i.imgur.com/p1jwn8b.png" height="80%" width="80%" />
 
-</p>
+  <h1>Azure Resources</h1>
+<img src="https://i.imgur.com/cyGVTGD.png" height="80%" width="80%" />
 
 - <h3>Microsoft Clone website and Azure Setup</h3>
   1️ ASP.NET Web Application
