@@ -1,0 +1,167 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - msclonesite</title>
+    <script type="importmap"></script>
+   
+ 
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Irish+Grover&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-link">
+                <div class="ms-logo">
+                    <a asp-page="/Index"><img src="~/assets/img/msiconlogo.png" alt=""></a>
+                </div>
+
+                <a href="">Microsoft 365</a>
+                <a href="">Teams</a>
+                <a href="">Copilot</a>
+                <a href="">Windows</a>
+                <a href="">Surface</a>
+                <a href="">Xbox</a>
+                <a href="">Support</a>
+
+                <div class="right-menu">
+                    <a href="">All Microsoft</a>
+                    <div class="Search-menu">
+                        <a href="">Search </a>
+                        <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+                    </div>
+
+                    <div class="Shopping-menu">
+                        <a href="">Cart</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+                  
+                    <div class="SignIn-menu">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            
+                            <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="inline-logout">
+                                <button type="submit"><i class="fa-solid fa-user"></i> Logout</button>
+                            </form>
+                            <span class="nav-user">Hello, @User.Identity.Name!</span>
+                        }
+                        else
+                        {
+                            <a asp-area="Identity" asp-page="/Account/Login">Sign in <i class="fa-solid fa-user"></i></a>
+                        }
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <!--Footer Section  -->
+        <div class="Footer-section">
+            <div class="whats-new">
+                <h3>What's new</h3>
+                <a href="">Copilot for organizations</a>
+                <a href="">Copilot for personal use</a>
+                <a href="">Microsoft 365</a>
+                <a href="">Explore Microsoft products</a>
+                <a href="">Windows 11 appps</a>
+
+            </div>
+            <div class="microsof-store">
+                <h3>Microsoft Store</h3>
+                <a href="">Account profile</a>
+                <a href="">Download Center</a>
+                <a href="">Microsoft Store Support</a>
+                <a href="">Returns</a>
+                <a href="">Order tracking</a>
+
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <a href="">Microsoft in education</a>
+                <a href="">Devices for education</a>
+                <a href="">Microsoft Teams for Education</a>
+                <a href="">Microsoft 365 Education</a>
+                <a href="">Office Education</a>
+                <a href="">Educator training and development</a>
+                <a href="">Deals for students and parents</a>
+                <a href="">Azure for students</a>
+
+            </div>
+            <div class="business">
+                <h3>Business</h3>
+                <a href="">Microsoft Ai</a>
+                <a href="">Microsoft  Security</a>
+                <a href="">Azure</a>
+                <a href="">Dynamics 365</a>
+                <a href="">Microsoft 365</a>
+                <a href="">Microsoft Advertising</a>
+                <a href="">Microsoft 365 Copilot</a>
+                <a href="">Microsoft Teams</a>
+
+            </div>
+            <div class="developer-it">
+                <h3>Developer & IT</h3>
+                <a href="">Microsoft Developer</a>
+                <a href="">Microsoft Learn</a>
+                <a href="">Support for Ai marketplace apps</a>
+                <a href="">Microsoft Tech Community</a>
+                <a href="">Microsoft Marketplace</a>
+                <a href="">Microsoft Power Platform</a>
+                <a href="">Marketplace Rewards</a>
+                <a href="">Visual Studio</a>
+
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <a href="">Careers</a>
+                <a href="">Privacy at Microsoft</a>
+                <a href="">Investors</a>
+                <a href="">Sustainability</a>
+
+            </div>
+        </div>
+        <div class="legal-section">
+            <div class="privacy">
+                <a href=""> <i class="fa fa-globe"></i> English(South Africa)</a>
+
+                <div class="privacy-icon">
+                    <img src="assets/privacy.png">
+                    <a href="">Your privacy Choices</a>
+                </div>
+
+                <a href="">Consumer Health Privacy</a>
+                <a href="">Contact Microsoft</a>
+                <a href="">Privacy</a>
+                <a href="">Trademarks</a>
+                <a href="">About our ads</a>
+                <a href="">&#169 Microsoft 2026</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

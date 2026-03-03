@@ -1,0 +1,211 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone- Microsoft-Ai, Cloud, Productivity, Gaming & Apps</title>
+    <link rel="icon" type="image/x-icon" href="~/assets/img/tabicon.png">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&family=Irish+Grover&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- Carosel Slider-->
+    <div class="Slider-container">
+
+        <div class="Slides">
+            <div class="Text-Ms365">
+                <h1>Microsoft  365</h1>
+                <p>Introducing Microsoft 365 Premium with our highest usage limits<br> and exclusive Copilot features for AI power users</p>
+
+                <div class="btn-ms365">
+                    <a href="">Discover Microsoft 365 Premium</a>
+                </div>
+
+                <div class="options-link">
+                    <div class="options">
+                        <a href="">See other Microsoft 365 options</a>
+                    </div>
+
+                    <div class="arrow-btn">
+                        <a href="">&#8250</a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="~/assets/img/M365.avif" class="slide active">
+            <img src="~/assets/img/Copilot.avif" class="slide">
+        </div>
+        <div class="Slider-controlls">
+
+            <i class="fa-solid fa-circle-play play-btn"></i>
+            <button onclick="nextSlide();resetAutoSlide()" return false;>&#8249</button>
+            <input type="radio">
+            <input type="radio">
+            <button onclick="prevSlide();resetAutoSlide()" return false;>&#8250</button>
+
+        </div>
+
+    </div>
+    <!-- Product Section -->
+    <div class="Product-options-icons">
+
+        <div class="product-links">
+            <div class="xbox">
+                <a href=""><img src="~/assets/img/xbox-console.svg" alt=""></a>
+            </div>
+
+            <a href="">Shop Xbox</a>
+        </div>
+
+        <div class="product-links">
+            <div class="ms365">
+                <a href=""><img src="~/assets/img/MS365-2.svg" alt=""></a>
+            </div>
+
+            <a href="">Choose your Microsoft 365</a>
+        </div>
+        <div class="product-links">
+            <div class="windows11">
+                <a href=""><img src="~/assets/img/MS365-2.svg" alt=""></a>
+            </div>
+
+            <a href="">Get Windows 11</a>
+        </div>
+        <div class="product-links">
+            <div class="surface">
+                <a href=""><img src="~/assets/img/Surface-1.svg" alt=""></a>
+            </div>
+
+            <a href="">Shop Surface devices</a>
+        </div>
+
+    </div>
+
+    <!-- Gaming Section -->
+    <div class="Gaming-products">
+        <div class="cards">
+            <img src="~/assets/img/card1-lpt.avif" alt="">
+            <h1>Surface Laptop,<br> Copilot+ PC</h1>
+            <p>Unlock AI features like Live Captions <br> and Cocreator with this exceptionally <br> powerful laptop.</p>
+            <div class="learn-more-btn">
+                <a href="">Learn more</a>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="~/assets/img/Xbox-black.webp" alt="">
+            <h1>Xbox Series X</h1>
+            <p>The fastes, most powerful Xbox ever.</p>
+            <div class="xbox-X-btn">
+                <a href="">Shop Xbox Series X</a>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="~/assets/img/Xbox-White.webp" alt="">
+            <h1>Xbox Series S</h1>
+            <p>Next-gen performance in the smallest Xvox ever.</p>
+            <div class="xbox-S-btn">
+                <a href="">Shop Xbox Series S</a>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="~/assets/img/Gamepass.avif" alt="">
+            <h1>Xbox Game Pass <br> Ultimate</h1>
+            <p>NPlay new titles on day one.  Enjoy<br> hundreds of high-quality games with <br> friends on console, PC or cloud.</p>
+            <div class="join-now-btn">
+                <a href="">Join now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Browser Section -->
+    <div class="Browser-section">
+        <img src="~/assets/img/edge-browser.avif" alt="">
+        <div class="Edge-browser-text">
+            <h1>Microsoft Edge</h1>
+            <p>World-class performance with more privacy, more <br> Productivity and more value while you browse</p>
+            <div class="Download-btn">
+                <a href="">Download now</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Business Section -->
+    <div class="headline-business">
+        <h1>For business</h1>
+    </div>
+    <div class="Business-section">
+
+        <div class="cards">
+            <img src="~/assets/img/pink-lpts.avif" alt="">
+
+            <div class="new-btn">
+                <a href="">New</a>
+            </div>
+
+            <h1>Surface Copilot+ <br> PCs for Business,<br> now with Intel</h1>
+            <p>Introducing the first Surface Copilot+ <br>PCs built with new Intel® Core™ Ultra<br> processors (Series 2).</p>
+            <div class="learn-more-btn">
+                <a href="">Learn more about Surface Pro for Business</a>
+            </div>
+
+            <div class="options-link">
+                <div class="options">
+
+                    <a href="">Learn more about Surface Laptop<br>for Business</a>
+                </div>
+
+                <div class="arrow-btn">
+                    <a href="">&#8250</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="cards">
+            <img src="~/assets/img/ms365-site.avif" alt="">
+            <h1>Microsoft 365 <br>Copilot</h1>
+            <p>Save time and focus on the things that <br> matter most with AI in Microsoft 365 <br> for business.</p>
+            <div class="learn-btn">
+                <a href="">Learn more</a>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="~/assets/img/ai-ms365.avif" alt="">
+            <h1>Surface Laptop,<br> Copilot+ PC</h1>
+            <p>Unlock AI features like Live Captions <br> and Cocreator with this exceptionally <br> powerful laptop.</p>
+            <div class="ai-btn">
+                <a href="">Explore Ai Solutions</a>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="~/assets/img/woman.webp" alt="">
+            <h1>Surface Laptop,<br> Copilot+ PC</h1>
+            <p>Unlock AI features like Live Captions <br> and Cocreator with this exceptionally <br> powerful laptop.</p>
+            <div class="today-btn">
+                <a href="">Get it today</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- Social Media -->
+    <div class="Social-media">
+        <p>Follow Microsoft</p>
+        <a href=""><img src="~/assets/img/x-social.webp" alt=""></a>
+        <a href=""><img src="~/assets/img/link-social.avif" alt=""></a>
+        <a href=""><img src="~/assets/img/youtube-social.webp" alt=""></a>
+        <a href=""><img src="~/assets/img/insta-social.webp" alt=""></a>
+    </div>
+
+
+    <script src="~/js/script.js"></script>
+</body>
+</html>
