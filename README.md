@@ -1,7 +1,8 @@
 # Azure- 3 Tier single region architecture
 Microsoft Azure Cloud
 
-<img src="https://i.imgur.com/Fvr1W1b.jpg" title="source: imgur.com" />
+<img src="https://i.imgur.com/KppSPs4.png" title="source: imgur.com" />
+
 <h1>Azure 3 tier single region </h1>
 
 
