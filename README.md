@@ -32,8 +32,11 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
 <img src="https://i.imgur.com/cyGVTGD.png" height="80%" width="80%" />
 
   <h2>Quick Video walk through</h2>
-  <img src="https://i.imgur.com/Rn8jiM5.png" <a> https://youtu.be/ST9k_eDoXh0"</a> />
-  https://youtu.be/ST9k_eDoXh0
+  
+<a href="https://youtu.be/ST9k_eDoXh0">
+  <img src="https://i.imgur.com/Rn8jiM5.png"/>
+</a>
+   
 
 <h3>1️ ASP.NET Web Application</h3>
 C# ASP.NET web application
