@@ -48,11 +48,11 @@ Demonstrates typical web app behavior: request → server → database → respo
 
 Project Structure:
 
-/Controllers      → Handles web requests and business logic
-/Views            → Razor pages for UI
-/Models           → Application data models
-Program.cs        → App entry point and configuration
-Startup.cs        → Configures services, routing, and middleware
+/Controllers      → Handles web requests and business logic<br />
+/Views            → Razor pages for UI<br />
+/Models           → Application data models<br />
+Program.cs        → App entry point and configuration<br />
+Startup.cs        → Configures services, routing, and middleware<br />
 
 Development Notes:
 
