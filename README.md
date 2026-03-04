@@ -31,16 +31,14 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
   <h1>Azure Resources</h1>
 <img src="https://i.imgur.com/cyGVTGD.png" height="80%" width="80%" />
 
-  <h2>Video walk through</h2>
-   [<img src="https://i.imgur.com/Rn8jiM5.png" title="source: https://youtu.be/ST9k_eDoXh0" />]
-- <h3>Microsoft Clone website and Azure Setup</h3>
-  1️ ASP.NET Web Application
+  <h2>Quick Video walk through</h2>
+  <img src="https://i.imgur.com/Rn8jiM5.png" title="source: https://youtu.be/ST9k_eDoXh0" />
 
-
-
-
+<h3>1️ ASP.NET Web Application</h3>
 C# ASP.NET web application
 Hosted on Windows Server VMs with IIS in the application tier
+I replicated a microsoft clone site for learning and demonstation purposes using
+(html,css,javascript,C#,ASP.Net and Azure SQL)
 
 Functionality:
 
@@ -61,9 +59,9 @@ Development Notes:
 Tested locally before deploying to Azure
 Ready to be deployed to private application VMs in Azure
 
-2️ Azure 3-Tier Architecture
+<h3>2️ Azure 3-Tier Architecture</h3>
 
-Your lab replicates a production-style 3-tier architecture with security and monitoring:
+The lab replicates a production-style 3-tier architecture with security and monitoring:
 
 Tier 1 — Web Tier (rg-web1)
 
@@ -105,7 +103,7 @@ Purpose:
 Stores and protects sensitive data
 Only accessible from the application tier
 
-3️ Monitoring & Security Integration
+<h3>3️ Monitoring & Security Integration</h3>
 
 Log Analytics Workspace → Centralized log collection from app VMs
 Defender for Cloud → Monitors VM security and generates alerts
@@ -113,15 +111,10 @@ Sentinel → Ingests Defender logs for incident management
 Windows Security Events → Captured by AMA for real-time monitoring
 This setup ensures that all traffic reaching your application tier is monitored, logged, and analyzed, even in a lab environment.
 
-4️ Deployment Flow
+<h3>4️ Deployment Flow</h3>
+Users hit public LB IP → routed to backend VM via LB rules.
 
-Users hit public LB IP → routed to backend VM via LB rules
-
-Application VM executes ASP.NET web application → fetches data from SQL Server
-VM logs security events → AMA → Log Analytics → Defender → Sentinel
-Sentinel alerts generate incidents for suspicious activity (e.g., login attempts, port scans reaching VM).
-
-- <h3>Challenges and constraints</h3>
+<h3>Challenges and constraints</h3>
 Despite free-tier limits and networking challenges, the lab successfully demonstrates:
 
  *A secure 3-tier architecture
