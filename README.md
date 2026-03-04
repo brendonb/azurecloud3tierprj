@@ -34,7 +34,9 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
 - <h3>Microsoft Clone website and Azure Setup</h3>
   1️ ASP.NET Web Application
 
-Project Type:
+<h2>Video walk through</h2>
+(https://youtu.be/udTh9LAM72o)
+
 
 C# ASP.NET web application
 Hosted on Windows Server VMs with IIS in the application tier
