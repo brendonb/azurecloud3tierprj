@@ -31,11 +31,12 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
   <h1>Azure Resources</h1>
 <img src="https://i.imgur.com/cyGVTGD.png" height="80%" width="80%" />
 
+  <h2>Video walk through</h2>
+   [![Azure 3-Tier Architecture Demo](thumbnail.png)](https://youtu.be/ST9k_eDoXh0)
 - <h3>Microsoft Clone website and Azure Setup</h3>
   1️ ASP.NET Web Application
 
-<h2>Video walk through</h2>
-(https://youtu.be/udTh9LAM72o)
+
 
 
 C# ASP.NET web application
