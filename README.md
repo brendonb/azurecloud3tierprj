@@ -7,8 +7,8 @@ Microsoft Azure Cloud
 
 
 <h2>Description</h2>
-A 3-tier Azure lab project demonstrating a secure web application architecture with C# ASP.NET, private backend VMs, 
-and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM templates and project code for learning and experimentation..
+A 3-tier Azure lab project demonstrating a secure web application architecture with C# ASP.NET, and private backend VMs.
+Includes ARM templates and project code for learning and experimentation..
 <br />
 
 
@@ -20,6 +20,8 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
 - <b>Resource Groups</b>
 - <b>Vnets, Subnets, Natgateways, Network Security Groups,Loadbalancer</b>
 - <b>Bastion</b>
+- <b>Blob Storage</b>
+- <b>File Server</b>
 - <b>Azure Blob storage</b>
 - <b>Microsoft Defender</b>
 - <b>Microsoft Sentinel</b>
@@ -41,7 +43,7 @@ and integrated monitoring using Microsoft Defender and Sentinel.Includes ARM tem
 <h3>1️ ASP.NET Web Application</h3>
 C# ASP.NET web application
 Hosted on Windows Server VMs with IIS in the application tier
-I replicated a microsoft clone site for learning and demonstation purposes using
+I replicated a Microsoft clone site for learning and demonstation purposes using
 (html,css,javascript,C#,ASP.Net and Azure SQL)
 
 Functionality:
@@ -121,14 +123,14 @@ Users hit public LB IP → routed to backend VM via LB rules.
 <h3>Challenges and constraints</h3>
 Despite free-tier limits and networking challenges, the lab successfully demonstrates:
 
- *A secure 3-tier architecture
- *Private application and data tiers
- *Monitoring and security alerting using Defender and Sentinel
- *Reproducible setup with ARM templates and project code
+ *A secure 3-tier architecture<br>
+ *Private application and data tiers<br>
+ *Reproducible setup with ARM templates and project code<br>
 
 These constraints guided decisions such as single-region deployment, PaaS SQL usage, 
 and focus on VM-level monitoring — all of which reflect real-world considerations when designing cloud labs 
-under resource and cost limitations.
+under resource and cost limitations.Some of the security features like Sentinel and Defender will be expanded
+on future iterations as the prime focus was placed on architecture.
   
 
 
