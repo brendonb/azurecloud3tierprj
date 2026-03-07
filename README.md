@@ -131,6 +131,7 @@ These constraints guided decisions such as single-region deployment, PaaS SQL us
 and focus on VM-level monitoring — all of which reflect real-world considerations when designing cloud labs 
 under resource and cost limitations.Some of the security features like Sentinel and Defender will be expanded
 on future iterations as the prime focus was placed on architecture.
+This lab uses a self-signed certificate. While the connection is secure, the certificate was generated with CN (Common Name). Modern browsers validate using SAN (Subject Alternative Name), so in production, an authorized CA like Let’s Encrypt would be used to avoid trust warnings.
   
 
 
